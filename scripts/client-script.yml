@@ -1,0 +1,33 @@
+config:
+  target: "https://appqa.clicktime.com/Rest/v2/"
+  processor: "../faker.js"
+  phases:
+    - duration: 1
+      arrivalCount: 1
+  defaults:
+    headers:
+      Content-Type: "application/json"
+      Cookie: "{{ cookieAuth }}"
+
+scenarios:
+  - flow:
+
+  # Clients
+    - function: "cookie"
+    - function: "generateClientData"
+    - post:
+        name: "Create new client"
+        url: "/Clients"
+        json:
+          ClientNumber: null
+          ShortName: "{{ name }}"
+          CreatedDate: null
+          Name: "{{ name }}"
+          IsActive: true
+        capture:
+          - json: "$.data.ID"
+            as: "new_clientid"
+    
+    # - log: "{{new_clientid}}"
+    - delete:
+        url: "/Clients/{{ new_clientid }}"

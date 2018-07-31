@@ -1,0 +1,31 @@
+config:
+  target: "https://appqa.clicktime.com/Rest/v2/"
+  processor: "../faker.js"
+  phases:
+    - duration: 1
+      arrivalCount: 1
+  defaults:
+    headers:
+      Content-Type: "application/json"
+      Cookie: "{{ cookieAuth }}"
+      
+scenarios:
+  - flow:
+
+  # Jobs
+    - function: "cookie"
+    - function: "generateJobData"
+    - post:
+        name: "Create new job"
+        url: "/Jobs"
+        json:
+          ClientID: 4Pl7uvBv6GpKAqcQf_mCYow2
+          Name: LT Testing jJob36
+          IsActive: true
+        capture:
+          - json: "$.data.ID"
+            as: "new_clientid"
+    
+    # - log: "{{new_clientid}}"
+    - delete:
+        url: "/Jobs/{{ new_clientid }}"

@@ -1,0 +1,34 @@
+config:
+  target: "https://appqa.clicktime.com/Rest/v2/"
+  processor: "./faker.js"
+  phases:
+    - duration: 1
+      arrivalCount: 1
+  defaults:
+    headers:
+      Content-Type: "application/json"
+      Cookie: "{{ cookieAuth }}"
+      
+scenarios:
+  - flow:
+
+  # Users
+    - function: "cookie"
+    - function: "generateUserData"
+    - post:
+        name: "Create new user"
+        url: "/Users"
+        json:
+          Email: "{{ email }}"
+          Name: "{{ name }}"
+          BillingRate: 150
+          MinimumTimeHours: 8
+          MinimumTimePeriod: "Day"
+          CostRate: 75
+          EmploymentTypeID: '4b4vHY8EscIyEUoqzr4aWug2'
+        capture:
+          - json: "$.data.ID"
+            as: "new_userid"
+    
+    - delete:
+        url: "/Users/{{ new_userid }}"

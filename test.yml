@@ -1,0 +1,57 @@
+config:
+  target: "https://appqa.clicktime.com/Rest/v2/"
+  processor: "./faker.js"
+  phases:
+    - duration: 1
+      arrivalCount: 1
+      # rampTo: 4
+      # name: "Ramp up - expect 10 new users"
+  # variables:
+  #   cookieAuth:
+  #     - {{ cookieAuth }}
+  defaults:
+    headers:
+      Content-Type: "application/json"
+      Cookie: "{{ cookieAuth }}"
+scenarios:
+  - flow:
+    - function: "cookie"
+    - function: "basicAuth"
+    - get:
+        headers:
+          Authorization: "{{ basicAuth }}"
+        url: "/Me"
+        capture:
+          - json: "$.data"
+            as: "token"
+    - log: "{{token}}"
+
+    - function: "generateUserData"
+    - post:
+        name: "Create new user"
+        # headers:
+        #   Authorization: "Token {{token}}"
+        url: "/Users"
+        json:
+          Email: "{{ email }}"
+          Name: "{{ name }}"
+          BillingRate: 150
+          MinimumTimeHours: 8
+          MinimumTimePeriod: "Day"
+          CostRate: 75
+          EmploymentTypeID: '4b4vHY8EscIyEUoqzr4aWug2'
+        capture:
+          - json: "$.data.ID"
+            as: "new_userid"
+    
+    - delete:
+        url: "/Users/{{ new_userid }}"
+        capture:
+          - json: "$.data"
+            as: "response"
+
+    # - get:
+    #     url: "/Users"
+    #     capture:
+    #       - json: "$."
+    #         as: "name"
