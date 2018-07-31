@@ -25,7 +25,7 @@ scenarios:
           MinimumTimeHours: 8
           MinimumTimePeriod: "Day"
           CostRate: 75
-          EmploymentTypeID: '4b4vHY8EscIyEUoqzr4aWug2'
+          EmploymentTypeID: "4b4vHY8EscIyEUoqzr4aWug2"
         capture:
           - json: "$.data.ID"
             as: "new_userid"
