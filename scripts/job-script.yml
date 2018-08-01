@@ -14,15 +14,14 @@ scenarios:
 
   # Jobs
     - function: "cookie"
-    - function: "generateJobData"
-    # - log: "{{ jobNumber }}"
+    - function: "generageJobData"
     - post:
         name: "Create new job"
         url: "/Jobs"
-        beforeRequest: 'jobSetJson'
         json:
           ClientID: "4N74rlRefUN9P64BblHAPmA2"
           Name: "{{ name }}"
+          JobNumber: "{{$randomNumber(1, 200)}}"
           IsActive: true
           IsBillable: true
           BillingRate: 300
@@ -32,8 +31,6 @@ scenarios:
             as: "new_clientid"
           - json: "$."
             as: "error"
-    
-    - log: "{{ error }}"
-    # - log: "{{new_clientid}}"
+
     - delete:
         url: "/Jobs/{{ new_clientid }}"

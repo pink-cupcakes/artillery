@@ -32,10 +32,10 @@ scenarios:
     - delete:
         url: "/Clients/{{ new_clientid }}"
 
-    - get:
-        url: "/Clients"
-        capture:
-          - json: "$.data"
-            as: "clients"
+    # - get:
+    #     url: "/Clients"
+    #     capture:
+    #       - json: "$.data"
+    #         as: "clients"
     
-    - log: "{{ clients }}"
+    # - log: "{{ clients }}"
