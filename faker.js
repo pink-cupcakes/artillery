@@ -40,18 +40,24 @@ const generateUserData = (userContext, events, done) => {
     return done();
 };
 
-const generageJobData = (jobContext, events, done) => {
+const jobSetJson = (requestParams, context, ee, next) => {
+    console.log(context)
+    requestParams.json = {
+        JobNumber: context.vars.jobNumber,
+        Name: context.vars.name
+    };
+    return next();
+};
+
+const generageJobData = (jobContext, events, next) => {
     // generate data with Faker:
-    var name = `${Faker.name.firstName()} ${Faker.name.lastName()}`;
-    var billingRate = Faker.random.number({'min': 200, 'max': 400});
-    var CostRate = Faker.random.number({'min': 50, 'max': 150});
+    var name = `${Faker.name.firstName()}`;
+    var jobNumber = Faker.random.number(100);
     // add variables to virtual user's context:
     jobContext.vars.name = name;
-    jobContext.vars.email = `aqi+${name.split(' ')[0]}@clicktime.com`;
-    jobContext.vars.billingRate = parseFloat(billingRate);
-    jobContext.vars.CostRate = CostRate;
+    jobContext.vars.jobNumber = jobNumber;
     // continue with executing the scenario:
-    return done();
+    return next();
 };
 
 
@@ -75,5 +81,6 @@ module.exports = {
     generateClientData  : generateClientData,
     generateUserData    : generateUserData,
     generageJobData     : generageJobData,
-    generageTaskData    : generageTaskData
+    generageTaskData    : generageTaskData,
+    jobSetJson          : jobSetJson
 };
