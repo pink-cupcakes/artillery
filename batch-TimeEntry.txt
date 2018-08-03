@@ -1,0 +1,260 @@
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+
+POST /rest/v2/TimeEntries HTTP/1.1
+Host: https://oshertest.clicktime.com/
+Content-Type: application/json; charset=utf-8
+
+{"UserID": "4detoGa_2y4UquQ0B6eKFTQ2",
+"JobID": "4gOECQW8V0UhGtaPzaaPDgw2",
+"TaskID": "4nUBF6X-c5xbo6LzRXy_yGQ2",
+"Hours": .1,
+"Date": "2018-09-27"}
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm--

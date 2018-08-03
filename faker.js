@@ -1,7 +1,8 @@
 'use strict';
 // Make sure to "npm install faker" first.
 const Faker = require('faker');
-const env = require('./config.js');
+const env   = require('./config.js');
+const fs    = require('fs');
 
 const cookie = (cookieContext, events, done) => {
     // add variables to virtual user's context:
@@ -40,24 +41,13 @@ const generateUserData = (userContext, events, done) => {
     return done();
 };
 
-const jobSetJson = (requestParams, context, ee, next) => {
-    console.log(context)
-    requestParams.json = {
-        JobNumber: context.vars.jobNumber,
-        Name: context.vars.name
-    };
-    return next();
-};
-
-const generageJobData = (jobContext, events, next) => {
+const generageJobData = (jobContext, events, done) => {
     // generate data with Faker:
     var name = `${Faker.name.firstName()}`;
-    var jobNumber = Faker.random.number(100);
     // add variables to virtual user's context:
     jobContext.vars.name = name;
-    jobContext.vars.jobNumber = jobNumber;
     // continue with executing the scenario:
-    return next();
+    return done();
 };
 
 
@@ -75,6 +65,29 @@ const generageTaskData = (taskContext, events, done) => {
     return done();
 };
 
+const generateTimeData = (timeContext, events, done) => {
+    // generate data with Faker:
+    var day = Faker.random.number({'min': 1, 'max': 30});
+    // add variables to virtual user's context:
+    timeContext.vars.date = `2018-09-${day}`;
+    // continue with executing the scenario:
+    return done();
+};
+
+const setBatchRequest = (requestParams, context, ee, next) => {
+    // var array = fs.readFileSync(__dirname + '/batch-TimeEntry.txt').toString('').split("\r\n");
+    // console.log(array.join(''));
+    
+    requestParams.body = '@batch-TimeEntry.txt';
+    // console.log(requestParams);
+    return next();
+};
+
+const logger = (requestParams, response, context, ee, next) => {
+    console.log(requestParams);
+    next();
+}
+
 module.exports = {
     cookie              : cookie,
     basicAuth           : basicAuth,
@@ -82,5 +95,7 @@ module.exports = {
     generateUserData    : generateUserData,
     generageJobData     : generageJobData,
     generageTaskData    : generageTaskData,
-    jobSetJson          : jobSetJson
+    generateTimeData    : generateTimeData,
+    setBatchRequest     : setBatchRequest,
+    logger              : logger
 };

@@ -1,0 +1,16 @@
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+GET /rest/v2/Me HTTP/1.1
+Host: api.clicktime.com
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+GET /rest/v2/Me HTTP/1.1
+Host: api.clicktime.com
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm
+Content-Type: application/http; msgtype=request
+GET /rest/v2/Me HTTP/1.1
+Host: api.clicktime.com
+
+--dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm--
