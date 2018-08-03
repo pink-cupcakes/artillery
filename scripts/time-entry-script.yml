@@ -1,0 +1,36 @@
+config:
+  target: "https://oshertest.clicktime.com/Rest/v2/"
+  processor: "../faker.js"
+  phases:
+    - duration: 1
+      arrivalCount: 1
+  defaults:
+    headers:
+      Content-Type: "application/json"
+      Cookie: "{{ cookieAuth }}"
+      
+scenarios:
+  - flow:
+
+  # Time Entries
+    - function: "cookie"
+    - function: "generateTimeData"
+    - post:
+        name: "Time entry"
+        url: "/TimeEntries"
+        json:
+          UserID: "4detoGa_2y4UquQ0B6eKFTQ2"
+          JobID: "4gOECQW8V0UhGtaPzaaPDgw2"
+          TaskID: "4nUBF6X-c5xbo6LzRXy_yGQ2"
+          Hours: "1"
+          Date: "{{ date }}"
+        capture:
+          - json: "$.data.ID"
+            as: "new_clientid"
+          - json: "$.data"
+            as: "new_time_entry"
+            
+    - log: "{{ new_time_entry }}"
+
+    # - delete:
+    #     url: "/TimeEntries/{{ new_clientid }}"

@@ -1,0 +1,38 @@
+config:
+  target: "https://appqa.clicktime.com/Rest/v2"
+  processor: "../faker.js"
+  phases:
+    - duration: 1
+      arrivalCount: 1
+  defaults:
+    headers:
+      Content-Type: "multipart/mixed; boundary='dj8bjmwejx9h4j2zwbgawzmsqy930poik9pm'"
+      Cookie: "{{ cookieAuth }}"
+      Expect: "100-continue"
+      Connection: Keep-Alive
+      Cache-Control: no-cache
+      Host: 'appqa.clicktime.com'
+      MIME-Version: 1.0,
+
+scenarios:
+  - flow:
+
+  # Time Entries
+    - function: "cookie"
+    - post:
+        name: "Time entry"
+        url: "/$batch"
+        beforeRequest: "setBatchRequest"
+        afterResponse: "logger"
+        # json:
+        #     filePath: '../batch-TimeEntry.txt'
+        capture:
+          - json: "$.data.ID"
+            as: "new_clientid"
+          - json: "$."
+            as: "new_time_entry"
+            
+    # - log: "{{ new_time_entry }}"
+
+    # - delete:
+    #     url: "/TimeEntries/{{ new_clientid }}"
